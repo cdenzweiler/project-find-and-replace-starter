@@ -24,21 +24,14 @@ replaceAllButton.addEventListener("click", function () {
 
   let find = findInput.value
   let replace = replaceInput.value
-
-
   for (let i = 0; i < rowElements.length; i++) {
-
     let currentRowElement = getCellElements(rowElements[i]);
-
     for (let j = 0; j < currentRowElement.length; j++) {
-
       let currentCellElement = currentRowElement[j]
       if (currentCellElement.innerHTML.includes(find)) {
-
         currentCellElement.innerHTML = currentCellElement.innerHTML.replace(find, replace)
       } else {
       }
- 
     }
   }
 })
